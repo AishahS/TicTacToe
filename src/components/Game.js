@@ -5,6 +5,7 @@ import Board from "./Board";
 const styles = {
   width: "200px",
   margin: "20px auto",
+  color: "white",
 };
 
 const Game = () => {
@@ -33,6 +34,9 @@ const Game = () => {
 
   return (
     <>
+      <div style={{ ...styles, fontSize: 30, textAlign: "center" }}>
+        <p>Tic Tac Toe</p>
+      </div>
       <Board squares={board} onClick={handleClick} />
       <div style={styles}>
         <p>
